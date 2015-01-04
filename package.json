@@ -1,0 +1,32 @@
+{
+ "name" : "node-mongo-backup-manager",
+ "private": false,
+ "version" : "0.0.1",
+ "description" : "MongoDB backup manager for Node.js",
+ "main" : "./lib/backup-manager.js",
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/markdicksonjr/node-mongo-backup-manager.git"
+ },
+ "author": "Mark Dickson <markdicksonjr@gmail.com>",
+ "contributors": [
+   {
+      "name": "Mark Dickson",
+      "email": "markdicksonjr@gmail.com"
+   }
+ ],
+  "license": "proprietary",
+  "engines": {
+      "node": ">=0.8.14"
+  },
+  "dependencies": {
+    "underscore": "*",
+    "fstream": "*",
+    "tar": "*",
+    "moment": "*",
+    "rimraf": "*"
+  },
+  "scripts": {
+    "test": "cd test;nodeunit main.js"
+  }
+}
