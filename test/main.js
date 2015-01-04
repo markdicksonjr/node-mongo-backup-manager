@@ -20,7 +20,7 @@ module.exports = {
                 username: values.auth.username,
                 password: values.auth.password,
                 database: 'backup-test',
-                outputDirectory: '/Users/markdickson/Desktop/db-backups',
+                outputDirectory: values.outputDirectory,
                 createEnclosingDirectory: true
             }, function(err_backup) {
                 test.ok(true, 'simple');
@@ -32,7 +32,7 @@ module.exports = {
             backup_manager.backup({
                 username: values.auth.username,
                 password: values.auth.password,
-                outputDirectory: '/Users/markdickson/Desktop/db-backups',
+                outputDirectory: values.outputDirectory,
                 createEnclosingDirectory: true
             }, function(err_backup) {
                 test.ok(true, 'simple');
@@ -41,13 +41,12 @@ module.exports = {
         },
 
         streaming: function(test) {
-            backup_manager.backup({
+            backup_manager.backupViaStream({
                 username: values.auth.username,
                 password: values.auth.password,
                 database: 'backup-test',
                 collection: 'test-collection',
-                streaming: true,
-                createEnclosingDirectory: false
+                outputFile: values.outputDirectory + '/backup.gz'
             }, function(err_backup) {
 
                 test.ok(true, 'streaming');
