@@ -5,6 +5,6 @@ module.exports = {
         password: 'tester'
     },
 
-    outputDirectory: '/Users/markdickson/Desktop/db-backups'
+    outputDirectory: __dirname + '/db-backups'
 
 };
