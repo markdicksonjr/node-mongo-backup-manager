@@ -1,5 +1,9 @@
 node-mongo-backup-manager
 =========================
+[![Build Status][travis-img]][travis-url]
+
+[travis-img]: https://travis-ci.org/markdicksonjr/node-mongo-backup-manager.svg?branch=master
+[travis-url]: https://travis-ci.org/markdicksonjr/node-mongo-backup-manager
 
 A simple utility for taking a backup of a mongo database
 
