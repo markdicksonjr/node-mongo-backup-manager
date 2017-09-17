@@ -1,7 +1,7 @@
 {
   "name": "node-mongo-backup-manager",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MongoDB backup manager for Node.js",
   "main": "./lib/backup-manager.js",
   "scripts": {
